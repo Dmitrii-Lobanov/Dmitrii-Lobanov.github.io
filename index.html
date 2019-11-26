@@ -16,10 +16,10 @@
         <a href="#" id="logo">Dmitrii Lobanov</a>
         <nav>
           <ul>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#footer">Contacts</a></li>
           </ul>
         </nav>
       </header>
@@ -32,7 +32,7 @@
         </div>
       </section>
 
-      <div class="skills">
+      <div class="skills" id="skills">
         <h1>My skills</h1>
         <ul class="skillset">
           <li>
@@ -70,33 +70,33 @@
         </ul>
       </div>
 
-      <div class="projects">
+      <div class="projects" id="projects">
         <h1>My projects</h1>
         <ul class="projectset">
-          <li class="project">
+          <li class="project" onClick="parent.open('https://github.com/Dmitrii-Lobanov/Author-Quiz')">
             <div>
               <div class="img-container"><img src="./img/project1.png" alt="Author Quiz App" class="project-img"></div>
               <h1>Author Quiz App</h1>
               <p>In this app you need to choose the book written by the author shown on the picture</p>
             </div>
           </li>
-          <li class="project">
+          <li class="project" onClick="parent.open('https://codepen.io/Dmitrii-Lobanov/pen/zgvEyM')">
             <div>
               <div class="img-container"><img src="./img/project2.png" alt="Video Games Sales App" class="project-img"></div>
               <h1>Video Games Sales App</h1>
               <p>This app is created using D3.js and visualizes data</p>
             </div>
           </li>
-          <li class="project">
+          <li class="project" onClick="parent.open('https://codepen.io/Dmitrii-Lobanov/full/ymBVEm')">
             <div>
               <div class="img-container"><img src="./img/project3.png" alt="Calculator App" class="project-img"></div>
               <h1>Calculator App</h1>
               <p>A simple calculator created using React</p>
             </div>
           </li>
-          <li class="project">
+          <li class="project" onClick="parent.open('https://codepen.io/Dmitrii-Lobanov/pen/MNggxw')">
             <div>
-              <div class="img-container"><img src="./img/project4.png" alt="Author Quiz App" class="project-img"></div>
+              <div class="img-container"><img src="./img/project4.png" alt="Markdown Previewer App" class="project-img"></div>
               <h1>Markdown Previewer App</h1>
               <p>An app that transform markdown to text created using React</p>
             </div>
@@ -105,8 +105,10 @@
       </div>
     </div>
 
-    <footer>
-      Footer
+    <footer id="footer">
+      <div>
+        <p>&#9400; Dmitrii Lobanov, 2019</p>
+      </div>
     </footer>
 
   </body>
