@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+:root {
+  --main-bg-color: #fc5b62;
+  --secondary-bg-color: #008489;
+  --bg-color: #ffffff;
+  --font-color: #fffbc5;
+  --secondary-font-color: #484848;
+  --additional-color: #ced1cc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: auto 50px;
+  grid-template-areas: 
+    "head"
+    "hero"
+    "skills"
+    "projects"
+    "footer";
+}
+
+.main {
+  display: grid;
+  grid-template-rows: auto fit-content(30%) auto auto auto;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-columns: [logo-start] fit-content(20%) auto [logo-end];
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--secondary-bg-color);
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  color: var(--font-color);
+  padding: 15px;
+}
+
+#logo {
+  padding: 15px;
+  margin-left: 0px;
+  background-color: var(--font-color);
+  color: var(--secondary-bg-color);
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+section#hero {
+  background-color: var(--secondary-bg-color);  
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: space-around;
+}
+
+#content h1 {
+  text-transform: uppercase;
+  color: var(--font-color);
+}
+
+#content p {
+  color: var(--font-color);
+}
+
+img {
+  max-width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#hero-img {
+  width: 200px;
+  height: 200px;
+}
+
+.skills {
+    color: var(--secondary-font-color);
+    text-align: center;
+    margin: 0 5% 0 5%;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1em 1em;
+}
+
+.skills ul li i {
+  font-size: 5em;
+}
+
+.skillset {
+  margin: 0;
+  padding: 0;
+}
+
+.skillset li {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5%;
+  padding: 1em;
+}
+
+.fa-js-square {
+  color: #ffdc30;
+}
+
+.fa-react {
+  color: turquoise;
+}
+
+.fa-node {
+  color: green;
+}
+
+.fa-css3-alt {
+  color: blue;
+}
+
+.fa-html5 {
+  color: red;
+}
+
+.fa-git {
+  color: #484848;
+}
+
+#redux-img {
+  height: 75px;
+  width: 75px;
+}
+
+.fa-github {
+  color: purple;
+}
+
+/********  VIEWS *********/
+/* Tablet view */
+@media screen and (max-width: 60em) {
+  .skills ul {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/* Smartphone view */
+@media screen and (max-width: 40em) {
+  .header {
+    grid-template-columns: auto;
+  }
+
+  #logo, nav {
+    grid-column: 1 / span 2;
+  }
+
+  nav ul {
+    float: none;
+    padding: 5%;
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    font-size: 0.9em;
+  }
+
+  section#hero {
+    grid-template-columns: auto;  
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-size: 1.2em;
+  }
+
+  #hero-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #content p {
+    font-size: 0.9em;
+  }
+
+
+  .skillset li {
+    grid-column: 1 / span 2;
+  }
+}
