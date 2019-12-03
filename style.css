@@ -258,7 +258,7 @@ footer div p {
 
 /********  VIEWS *********/
 /* Tablet view */
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 991px) {
   .skills ul {
     grid-template-columns: repeat(2, auto);
   }
@@ -273,7 +273,7 @@ footer div p {
 }
 
 /* Smartphone view */
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 767px) {
   .header {
     grid-template-columns: auto;
   }
