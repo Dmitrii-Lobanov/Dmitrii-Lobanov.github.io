@@ -15,17 +15,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-rows: auto 50px;
-  grid-template-areas: 
-    "head"
-    "hero"
-    "skills"
-    "projects"
-    "footer";
 }
 
 .main {
   display: grid;
-  grid-template-rows: auto fit-content(30%) auto auto auto;
+  grid-template-rows: auto fit-content(30%);
 }
 
 a {
@@ -272,6 +266,10 @@ footer div p {
   .projects ul {
     grid-template-columns: auto;
   }
+
+  .contacts i {
+    font-size: 2em;
+  }
 }
 
 /* Smartphone view */
@@ -314,8 +312,39 @@ footer div p {
     font-size: 0.9em;
   }
 
+  .contacts {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .contacts i {
+    margin-top: 5%;
+  }
+
+  #phone {
+    grid-area: "phone";
+  }
+
+  #email {
+    grid-area: "email";
+  }
+
+  #linkedin {
+    grid-area: "linkedin";
+  }
+
+  #codepen {
+    grid-area: "codepen";
+  }
+
+  #github {
+    grid-area: "github";
+  }
 
   .skillset li {
     grid-column: 1 / span 2;
+  }
+
+  .educations ul {
+    grid-template-columns: repeat(2, auto);
   }
 }

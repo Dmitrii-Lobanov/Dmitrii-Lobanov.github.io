@@ -33,11 +33,11 @@
       </section>
 
       <div class="contacts">
-        <i class="fas fa-phone-square" onClick="window.open('tel:+7-902-802-13-14')"><span class="contacts-info">+7(902)802-13-14</span></i>
-        <i class="fas fa-at"><span class="contacts-info" onClick="window.open('mailto:dmitriilobanov3@gmail.com')">DmitriiLobanov3@gmail.com</span></i>
-        <i class="fab fa-linkedin" onClick="parent.open('https://www.linkedin.com/in/dmitrii-lobanov')"></i>
-        <i class="fab fa-codepen" onClick="parent.open('https://codepen.io/Dmitrii-Lobanov')"></i>
-        <i class="fab fa-github-square" onClick="parent.open('https://github.com/Dmitrii-Lobanov')"></i>
+        <i class="fas fa-phone-square" id="phone" onClick="window.open('tel:+7-902-802-13-14')"><span class="contacts-info">+7(902)802-13-14</span></i>
+        <i class="fas fa-at" id="email"><span class="contacts-info" onClick="window.open('mailto:dmitriilobanov3@gmail.com')">DmitriiLobanov3@gmail.com</span></i>
+        <i class="fab fa-linkedin" id="linkedin" onClick="parent.open('https://www.linkedin.com/in/dmitrii-lobanov')"></i>
+        <i class="fab fa-codepen" id="codepen" onClick="parent.open('https://codepen.io/Dmitrii-Lobanov')"></i>
+        <i class="fab fa-github-square" id="github" onClick="parent.open('https://github.com/Dmitrii-Lobanov')"></i>
       </div>
 
       <div class="skills" id="skills">
@@ -125,40 +125,40 @@
           </li>
         </ul>
       </div>
+
+      <div class="educations" id="education">
+        <h1>My Education & Accompishments</h1>
+        <ul class="educationset">
+          <li class="education" onClick="parent.open('https://www.freecodecamp.org/certification/fcc2cd10025-b47a-4184-aaf0-5fec574483fa/full-stack')">
+            <div>
+              <img src="./img/freecodecamp.png" alt="Freecodecamp">
+            </div>
+          </li>
+          <li class="education" onClick="parent.open('https://www.codecademy.com/')">
+            <div>
+              <img src="./img/codecademy.png" alt="Codecademy">
+            </div>
+          </li>
+          <li class="education" onClick="parent.open('https://cs50.harvard.edu/college/')">
+            <div>
+              <img src="./img/cs50.png" alt="CS50 by Harvard University">
+            </div>
+          </li>
+          <li class="education" onClick="parent.open('https://frontendmasters.com/')">
+            <div>
+              <img src="./img/frontendmasters.png" alt="Fronend Masters">
+            </div>
+          </li>
+          <li class="education" onClick="parent.open('https://www.pluralsight.com/')">
+            <div>
+              <img src="./img/pluralsight.png" alt="Fronend Masters">
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="educations" id="education">
-      <h1>My Education & Accompishments</h1>
-      <ul class="educationset">
-        <li class="education" onClick="parent.open('https://www.freecodecamp.org/certification/fcc2cd10025-b47a-4184-aaf0-5fec574483fa/full-stack')">
-          <div>
-            <img src="./img/freecodecamp.png" alt="Freecodecamp">
-          </div>
-        </li>
-        <li class="education" onClick="parent.open('https://www.codecademy.com/')">
-          <div>
-            <img src="./img/codecademy.png" alt="Codecademy">
-          </div>
-        </li>
-        <li class="education" onClick="parent.open('https://cs50.harvard.edu/college/')">
-          <div>
-            <img src="./img/cs50.png" alt="CS50 by Harvard University">
-          </div>
-        </li>
-        <li class="education" onClick="parent.open('https://frontendmasters.com/')">
-          <div>
-            <img src="./img/frontendmasters.png" alt="Fronend Masters">
-          </div>
-        </li>
-        <li class="education" onClick="parent.open('https://www.pluralsight.com/')">
-          <div>
-            <img src="./img/pluralsight.png" alt="Fronend Masters">
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <footer id="footer">
+    <footer>
       <div>
         <p>&#9400; Dmitrii Lobanov, 2019</p>
       </div>
