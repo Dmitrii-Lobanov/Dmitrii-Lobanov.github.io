@@ -314,7 +314,7 @@ footer div p {
 
   .contacts {
     grid-template-columns: repeat(2, auto);
-    width: 90%;
+    width: 80%;
   }
 
   .contacts i {
