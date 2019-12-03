@@ -346,6 +346,6 @@ footer div p {
   }
 
   .educations ul {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto;
   }
 }
