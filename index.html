@@ -18,8 +18,7 @@
           <ul>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#footer">Contacts</a></li>
+            <li><a href="#education">Education</a></li>
           </ul>
         </nav>
       </header>
@@ -28,9 +27,18 @@
         <img src="./img/hero_avatar.png" alt="Dmitrii Lobanov" id="hero-img">
         <div id="content">
           <h1>Hi, I am Dmitrii</h1>
-          <p>I am a passionate frontend developer</p>
+          <h2>I am a passionate frontend developer</h2>
+          <p>I am looking forward to make great projects and collaborate with smart people</p>
         </div>
       </section>
+
+      <div class="contacts">
+        <i class="fas fa-phone-square" onClick="window.open('tel:+7-902-802-13-14')"><span class="contacts-info">+7(902)802-13-14</span></i>
+        <i class="fas fa-at"><span class="contacts-info" onClick="window.open('mailto:dmitriilobanov3@gmail.com')">DmitriiLobanov3@gmail.com</span></i>
+        <i class="fab fa-linkedin" onClick="parent.open('https://www.linkedin.com/in/dmitrii-lobanov')"></i>
+        <i class="fab fa-codepen" onClick="parent.open('https://codepen.io/Dmitrii-Lobanov')"></i>
+        <i class="fab fa-github-square" onClick="parent.open('https://github.com/Dmitrii-Lobanov')"></i>
+      </div>
 
       <div class="skills" id="skills">
         <h1>My skills</h1>
@@ -73,6 +81,20 @@
       <div class="projects" id="projects">
         <h1>My projects</h1>
         <ul class="projectset">
+          <li class="project" onClick="parent.open('https://dmitrii-lobanov-recipeapp.netlify.com/')">
+            <div>
+              <div class="img-container"><img src="./img/project5.png" alt="Recipe App" class="project-img"></div>
+              <h1>Recipe App</h1>
+              <p>In this app you can choose your favourite recipe and get info about it</p>
+            </div>
+          </li>
+          <li class="project" onClick="parent.open('https://dmitrii-lobanov-todolist.netlify.com/')">
+            <div>
+              <div class="img-container"><img src="./img/project6.png" alt="Todo List" class="project-img"></div>
+              <h1>Todo List App</h1>
+              <p>In this app you can create, edit and delete your own todo list</p>
+            </div>
+          </li>
           <li class="project" onClick="parent.open('https://github.com/Dmitrii-Lobanov/Author-Quiz')">
             <div>
               <div class="img-container"><img src="./img/project1.png" alt="Author Quiz App" class="project-img"></div>
@@ -103,6 +125,37 @@
           </li>
         </ul>
       </div>
+    </div>
+
+    <div class="educations" id="education">
+      <h1>My Education & Accompishments</h1>
+      <ul class="educationset">
+        <li class="education" onClick="parent.open('https://www.freecodecamp.org/certification/fcc2cd10025-b47a-4184-aaf0-5fec574483fa/full-stack')">
+          <div>
+            <img src="./img/freecodecamp.png" alt="Freecodecamp">
+          </div>
+        </li>
+        <li class="education" onClick="parent.open('https://www.codecademy.com/')">
+          <div>
+            <img src="./img/codecademy.png" alt="Codecademy">
+          </div>
+        </li>
+        <li class="education" onClick="parent.open('https://cs50.harvard.edu/college/')">
+          <div>
+            <img src="./img/cs50.png" alt="CS50 by Harvard University">
+          </div>
+        </li>
+        <li class="education" onClick="parent.open('https://frontendmasters.com/')">
+          <div>
+            <img src="./img/frontendmasters.png" alt="Fronend Masters">
+          </div>
+        </li>
+        <li class="education" onClick="parent.open('https://www.pluralsight.com/')">
+          <div>
+            <img src="./img/pluralsight.png" alt="Fronend Masters">
+          </div>
+        </li>
+      </ul>
     </div>
 
     <footer id="footer">
