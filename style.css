@@ -2,8 +2,8 @@
 
 /* Common Styles */
 :root {
-  --main-bg-color: #B52D4B;
-  --secondary-bg-color: #03906F;
+  --main-bg-color: #0D3077;
+  --secondary-bg-color: #3283D6;
   --bg-color: #ffffff;
   --font-color: #FDFDD9;
   --secondary-font-color: #484848;
@@ -75,6 +75,10 @@ section#hero {
   grid-template-columns: 1fr 1.5fr;
   align-items: space-around;
   color: var(--font-color);
+}
+
+#content{
+  text-align: center;
 }
 
 #content h1 {
